@@ -1,0 +1,56 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;   
+    /* need to give widh 100% other wise justify-content will not work in position fixed  */
+    position: fixed;
+    top: 0;
+    padding: 10px;
+
+    /* black animation color in header when user scroll down  */
+    
+    transition-timing-function: ease-in;
+    transition: all 0.8s;
+}
+.nav_black{
+    background-color: black;
+}
+.netflix_logo{
+width: 100px;
+object-fit: contain;
+/* position: fixed; */
+
+}
+.netflix_logo2{
+    width: 38px;
+    object-fit: contain;
+    /* position: relative; */
+    /* right: 35px; */
+    cursor: pointer;
+}
+.NavDiv1{
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 20px;
+    align-items: center;
+    padding-right: 15px;
+    
+}
+
+.NavDiv2{
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 23px;
+    align-items: center;
+    padding-right: 60px;   
+}
+.fa-solid{
+    font-size: 22px;
+}
+.fa-sharp{
+    font-size: 22px;
+}
