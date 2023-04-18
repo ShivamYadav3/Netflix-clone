@@ -1,5 +1,4 @@
-const tmbdApiKey = "1e31b001685bb9abfe5d1769c053d634"; //its api key getting from TMBD site that is allow us to get the movie data from the site so we are making a request for it
-
+const tmbdApiKey = "1e31b001685bb9abfe5d1769c053d634";
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${tmbdApiKey}&language=en-US`,
   fetchNetflixOriginals: `/discover/tv?api_key=${tmbdApiKey}&with_networks=213`,

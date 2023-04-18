@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
-// import Home from '../NavbarHeading/Home';
 
 function Navbar() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    //this useEffect is for making header back ground color black when user scroo; down
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         setShow(true);
@@ -18,7 +16,6 @@ function Navbar() {
   }, []);
   return (
     <div className={`nav ${show && "nav_black"}`}>
-      {/* { if user scrol so  "nav_black"  class gonna be fire and we are given a Bg color black in nav_black  }        */}
       <div className="NavDiv1">
         <img
           className="netflix_logo"

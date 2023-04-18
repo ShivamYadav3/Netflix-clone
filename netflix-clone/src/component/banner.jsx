@@ -6,23 +6,18 @@ import "./banner.css";
 function Banner() {
   const [movie, setMovie] = useState([]);
   useEffect(() => {
-    //here we are writing a logic if page got refreshed our banner need to changed
-
     async function fetchDataForBanner() {
       const requestForBanner = await axios.get(requests.fetchNetflixOriginals);
 
       setMovie(
         requestForBanner.data.results[
-          Math.floor(Math.random() * requestForBanner.data.results.length) //for choosing random movie from the data
+          Math.floor(Math.random() * requestForBanner.data.results.length)
         ]
       );
-      // console.log(requestForBanner.data.results,"result")
       return requestForBanner;
     }
     fetchDataForBanner();
   }, []);
-
-  // console.log(movie,"movieeeeeee")
 
   return (
     <header

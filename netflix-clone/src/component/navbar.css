@@ -2,13 +2,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;   
-    /* need to give widh 100% other wise justify-content will not work in position fixed  */
     position: fixed;
     top: 0;
-    padding: 10px;
-
-    /* black animation color in header when user scroll down  */
-    
+    padding: 10px;    
     transition-timing-function: ease-in;
     transition: all 0.8s;
 }
@@ -18,14 +14,12 @@
 .netflix_logo{
 width: 100px;
 object-fit: contain;
-/* position: fixed; */
+
 
 }
 .netflix_logo2{
     width: 38px;
     object-fit: contain;
-    /* position: relative; */
-    /* right: 35px; */
     cursor: pointer;
 }
 .NavDiv1{
