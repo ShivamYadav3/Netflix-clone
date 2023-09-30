@@ -24,13 +24,12 @@ function Banner() {
       className="bannerHeader"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`, //if movie doesn't exist it will not give undefined
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundPosition: "center center",
       }}
     >
       <div className="bannerContent">
         <h1 className="banner_title">
-          {/* // {banner title  } */}
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner_buttons">

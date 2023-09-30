@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from './App'
+
 import "./index.css";
-// import "./App.css";
+
 import Row from "./component/row";
 import requests from "./component/request";
 import "./component/row.css";
@@ -12,9 +12,7 @@ import Navbar from "./component/navbar";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Navbar />
-
     <Banner />
-
     <Row
       title="NETFLIX ORIGINALS"
       fetchUrl={requests.fetchNetflixOriginals}
